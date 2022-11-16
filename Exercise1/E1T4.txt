@@ -1,0 +1,12 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Problem: The public and private subnet network Access Control List (ACL) rules allow all traffic on all ports from anywhere.
+
+Solution: Network ACL rules should be used to minimise the available network connectivity to reduce the traffic that can be sent to and from the subnet. This will reduce or combat malicious attacks that could be waged on the AWS infrastructure, and will keep the private subnet and its  contents only for private use.
+
+# Poor practice 2
+Problem: All the buckets have block public access disabled and the files were uploaded without encryption.
+Therefore, unauthorized users can have access to the contents of the bucket and can easily view the contents contained in it.
+
+Solution: Permission policy should define in the specific bucket(Free Recipe) that should be accessible from the application server.

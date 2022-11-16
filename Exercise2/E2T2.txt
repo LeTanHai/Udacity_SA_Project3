@@ -1,0 +1,14 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+WebApp Security Group:
+- Make sure no security groups allow ingress from 0.0.0.0/0 to port 22
+- Make sure no security groups allow ingress from 0.0.0.0/0 to port 3389
+- Ensure MFA is enabled for the root user
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+- Security groups provide stateful filtering of ingress/egress network traffic to AWS resources. 
+It is recommended that no security group allows unrestricted ingress access on port 5000.
+
+- Security groups provide stateful filtering of ingress/egress network traffic to AWS resources. 
+It is recommended that no security group allows unrestricted ingress access on port 22.
